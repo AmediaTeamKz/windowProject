@@ -4,5 +4,42 @@
 @import "libs"
 @import "animate.css"
 @import "slick.css"
+*,p,ul
+	padding-top: 0
+	padding-right: 0
+	padding-left: 0
+	padding-bottom: 0
+	margin-bottom: 0
+	margin-top: 0
+	margin-left: 0
+	margin-right: 0
+.logotype
+	svg,
+	img
+		width: 127px
+		text,rect
+			fill: white!important
 
+
+header#header.header
+	background: url(../img/headerbg.jpg) no-repeat
+	background-size: cover
+	background-position: center
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(black, 0.5)
+	.container
+		position: relative
+		&>*
+			color: white
+.sub,logotype
+    line-height: 0.8
 @import "media"

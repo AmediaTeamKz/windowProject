@@ -1,4 +1,11 @@
 $(function(){
+
+$('.revslider').slick({
+    nextArrow: '<button class="slick-next"><img class="svg" src="../img/svg/greenarr.svg" alt="" /></button>',
+    prevArrow: '<button class="slick-prev"><img class="svg" src="../img/svg/greenarr.svg" alt="" /></button>',
+})
+
+
 jQuery('img.svg').each(function(){
     var $img = jQuery(this);
     var imgID = $img.attr('id');

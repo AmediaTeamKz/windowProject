@@ -10,7 +10,6 @@
 .wrp-content
 	max-width: 884.3px
 	margin: 0 auto
-	
 *,p,ul
 	padding-top: 0
 	padding-right: 0
@@ -141,13 +140,15 @@ header#header.header
 
 #short-us
 	padding-top: 87px
-
+	padding-bottom: 100px
 
 .section-title
 	font-size: 40px
 	text-transform: uppercase
 	color: #656565
 	margin-bottom: 25px
+	line-height: 40px
+	font-family: proxima
 	&.v2
 		color: $accent-color
 
@@ -168,4 +169,159 @@ header#header.header
 		color: #656565
 		letter-spacing: 0.5px
 		text-transform: uppercase
+
+#warning
+	background: url(../img/warnin.jpg) no-repeat
+	background-size: cover
+	background-position: center
+	position: relative
+	padding: 44px
+	padding-bottom: 77px
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(black, 0.3)
+	.container
+		position: relative
+	.section-title
+		color: white
+		margin-bottom: 58px
+	.paraq
+		color: white
+		text-align: center
+		max-width: 633px
+		display: block
+		margin-right: auto
+		margin-left: auto
+.warningsignal
+	margin-bottom: 33px
+	width: 50px
+	height: 50px
+	background: $accent-color-v2
+	border-radius: 10em
+	border: 3px solid white
+	img
+		width: 6px
+		height: 33px
+#danger
+	padding-top: 100px
+	padding-bottom: 95px
+	.box:nth-child(1)
+		max-width: 490px
+		p
+			margin-bottom: 75px
+		.section-title
+			margin-bottom: 55px
+	.box:nth-child(2)
+		max-width: 320px
+	.call
+		width: 100%
+		max-width: 342px
+		height: 60px
+.list-priv
+	li
+		margin-bottom: 43px
+		img
+			width: 40px
+			height: 40px
+			display: block
+			margin-right: 23px
+		p.paraq
+			margin-bottom: 0
+
+
+
+#uwork
+	position: relative
+	padding-top: 65px
+	.container
+		position: relative
+	.section-title
+		color: $accent-color-v2
+		margin-bottom: 83px
+	&:before
+		content: ''
+		width: 100%
+		height: 85%
+		background: rgba(black, 0.06)
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+.grid
+	display: grid
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+	grid-gap: 33px
+	
+.box-item
+	background: #000
+	height: 336px
+
+#rev
+	padding-top: 165px
+	.slick-arrow
+		height: 63px
+		width: 63px
+		top: calc(25% - 40.5px)
+		position: absolute
+		cursor: pointer
+		display: block
+		z-index: 3
+		background-color: transparent
+		border: none
+		outline: none
+		// background: url(../img/svg/arra.svg) no-repeat
+		// color: transparent
+		// border: none
+		// background-color: transparent
+		// border-radius: 10em
+		// background-size: 127px
+		// background-position: 0 0
+		svg
+			circle
+				transition: 0.3s all
+		&:active
+			svg
+				circle
+					fill: rgb(46, 160, 0)!important
+					
+	.slick-prev
+		transform: rotate(180deg)
+		left: 25%
+	.slick-next
+		right: 25%
+
+
+.slider-item
+	display: -webkit-flex !important
+	display: -moz-flex !important
+	display: -ms-flex !important
+	display: -o-flex !important
+	display: flex !important
+	
+	img
+		width: 256px
+		height: 256px
+		margin-bottom: 50px
+		border-radius: 10em
+		object-fit: cover
+
+	.peoplename
+		margin-bottom: 50px
+		font-size: 40px
+		text-transform: uppercase
+		font-family: proxima
+		font-weight: bold
+		color: $accent-color-v2
+	p.paraq
+		line-height: 24px
+	
+
 @import "media"

@@ -4,6 +4,10 @@
 @import "libs"
 @import "animate.css"
 @import "slick.css"
+#header>*
+	font-family: Roboto
+	font-weight: bold
+
 *,p,ul
 	padding-top: 0
 	padding-right: 0
@@ -14,18 +18,19 @@
 	margin-left: 0
 	margin-right: 0
 .logotype
-	svg,
+	margin-right: 18px
 	img
 		width: 127px
-		text,rect
-			fill: white!important
+		height: 21px
 
 
 header#header.header
 	background: url(../img/headerbg.jpg) no-repeat
 	background-size: cover
-	background-position: center
+	background-position: bottom
 	position: relative
+	padding-top: 25px
+	min-height: 682px
 	&:before
 		content: ''
 		width: 100%
@@ -40,6 +45,24 @@ header#header.header
 		position: relative
 		&>*
 			color: white
-.sub,logotype
-    line-height: 0.8
+.sub
+    line-height: 1
+    font-size: 16px
+.tel
+	font-family: Roboto
+	font-weight: bold
+	font-size: 19px
+	text-transform: uppercase
+	margin-right: 24px
+	a
+		color: white
+.call
+	background: #FF5741
+	text-transform: uppercase
+	font-size: 16px
+	border: none
+	border-radius: 10em
+	padding: 10px 25px
+	font-weight: bold
+	color: white
 @import "media"

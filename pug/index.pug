@@ -2,6 +2,7 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
 	title Document
 	link(rel="stylesheet", href="../css/main.min.css")
 	script(src="../js/scripts.min.js")
@@ -9,14 +10,15 @@ body
 	header#header.header.dfc
 		.top-line
 			.container.df.aic.jsb
-				.box.df.aic
+				.box.df.aic.fww
 					a(href="/index.html").logotype
 						img(src="../img/svg/logotype.svg", alt="")
 					p.sub.
 						Изготовление и установка детских<br/>
 						решеток безопасности на окна в Астане
-				.box.df.aic
-					span.tel по вопросам:
+				.box.df.aic.fww
+					span.tel
+						span по вопросам:
 						a(href="tel: +77781647391")  +77781647391
 					button.call(madal="call") заказать звонок
 		.container.dfc
@@ -130,4 +132,30 @@ body
 
 
 	section#project
-		
+		.container
+			.wrp-content.dfc
+				.wrp-border.dfc
+					h4.section-title.tac.
+						проект «KIDSTOPkz» <br/>
+						создан чтобы обезопасить<br/>
+						ваше чадо от случайного<br/>
+						выпадения из окна<br/>
+					form(action="").dfc.formFooter
+						input(type="text" placeholder="ваше имя")
+						input(type="text" placeholder="номер телефона")
+						button.call(madal="call" type="submit") заказать сейчас
+
+
+	footer#footer
+		.container
+			.wrp-footer.df.fww.jsb.aic
+				span.tel
+					span по вопросам:
+					a(href="tel: +77781647391")  +77781647391
+				
+				ul.df.aic.listsoc
+					li поделится:
+					each src in ['../img/svg/soc/insta.svg','../img/svg/soc/in.svg','../img/svg/soc/face.svg']
+						li
+							a(href='#').socbtn
+								img(src=src, alt="").svg

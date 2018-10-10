@@ -6,7 +6,7 @@ head
 	link(rel="stylesheet", href="../css/main.min.css")
 	script(src="../js/scripts.min.js")
 body
-	header#header.header
+	header#header.header.dfc
 		.top-line
 			.container.df.aic.jsb
 				.box.df.aic
@@ -20,5 +20,46 @@ body
 						a(href="tel: +77781647391")  +77781647391
 					button.call(madal="call") заказать звонок
 		.container.dfc
-			.wrp-text.dfc.jsb.center
-				h1 lolps
+			.header-wrp-text.dfc.jsb.center
+				h1.header-title Защита детей от выпадения с окна
+				small.subtitle решетки на окна в Астане
+				small.subtitle.bg привезем, установим - бесплатно!
+			.wrp-brn.dfc.aic
+				a(href="#").whatsappbtn
+					img(src="../img/svg/whatsapp.svg", alt="") 
+					span написать в whatsapp
+				a(href="#").subwhatsapp или показать номер
+		a(href="#").header-down-btn.centerX.df.bottom
+			img(src="../img/svg/he.svg", alt="").center
+
+	section#short-us
+		.container
+			.wrp-content.dfc
+				h3.section-title.center немного о нас
+				p.paraq.
+					Основной задачей каждого родителя является забота о безопасности своего малыша. Как только ребенок встал на ноги и начал самостоятельно передвигаться по квартире, взрослые должны быть начеку.
+				p.paraq.
+					Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+				
+
+
+				.wrp-icons.df.fww
+					-
+						var icons = ['../img/svg/ico1.svg',
+									 '../img/svg/ico2.svg',
+									 '../img/svg/ico3.svg'];
+					-
+						var text = ['хорошое качество',
+									'быстрый монтаж',
+									'оплата по факту'];
+
+					-for(x=0;x!=3;x++){
+						.box-icon.aic.dfc
+							img(src=icons[x])
+							p= text[x]			
+						-};
+
+	section#warning
+		.container
+			.wrp-content.dfc
+				

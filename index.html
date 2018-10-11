@@ -8,6 +8,22 @@
   <script src="../js/scripts.min.js"></script>
 </head>
 <body>
+  <div class="modalBg">
+    <div class="modalSelf" id="call">
+      <div class="modalHeader">
+        <h4 class="modal-title">Оставить заявку</h4>
+        <button class="close" modal="call"><span></span><span></span></button>
+      </div>
+      <div class="modalBody">
+        <form method="post" action="mail.php">
+          <input type="text" placeholder="Ваше имя"/>
+          <input type="tel" placeholder="Ваш номер"/>
+          <input type="submit" value="Отправить"/>
+        </form>
+      </div>
+      <div class="modalFooter"></div>
+    </div>
+  </div>
   <header class="header dfc" id="header">
     <div class="top-line">
       <div class="container df aic jsb">
@@ -18,7 +34,7 @@
           </p>
         </div>
         <div class="box df aic fww"><span class="tel"><span>по вопросам:</span><a href="tel: +77781647391"> +77781647391</a></span>
-          <button class="call" madal="call">заказать звонок</button>
+          <button class="call" modal="call">заказать звонок</button>
         </div>
       </div>
     </div>
@@ -26,8 +42,8 @@
       <div class="header-wrp-text dfc jsb center">
         <h1 class="header-title">Защита детей от выпадения с окна</h1><small class="subtitle">решетки на окна в Астане</small><small class="subtitle bg">привезем, установим - бесплатно!</small>
       </div>
-      <div class="wrp-brn dfc aic"><a class="whatsappbtn" href="#"><img src="../img/svg/whatsapp.svg" alt=""/><span>написать в whatsapp</span></a><a class="subwhatsapp" href="#">или показать номер</a></div>
-    </div><a class="header-down-btn centerX df bottom" href="#"><img class="center" src="../img/svg/he.svg" alt=""/></a>
+      <div class="wrp-brn dfc aic"><a class="whatsappbtn" href="https://wa.me/77783083300"><img src="../img/svg/whatsapp.svg" alt=""/><span>написать в whatsapp</span></a><a class="subwhatsapp" href="tel:+77783083300">или показать номер</a></div>
+    </div><a class="header-down-btn centerX df bottom" href="#short-us"><img class="center" src="../img/svg/he.svg" alt=""/></a>
   </header>
   <section id="short-us">
     <div class="container">
@@ -76,7 +92,7 @@
         <div class="box">
           <h3 class="section-title">Опасность<br/>москитных сеток</h3>
           <p class="paraq">Основной задачей каждого родителя является забота о безопасности своего малыша. Как только ребенок встал на ноги и начал самостоятельно передвигаться по квартире, взрослые должны быть начеку.</p>
-          <button class="call" madal="call">заказать сейчас</button>
+          <button class="call" modal="call">заказать сейчас</button>
         </div>
         <div class="box">
           <ul class="list-priv">
@@ -173,10 +189,10 @@
             ваше чадо от случайного<br/>
             выпадения из окна<br/>
           </h4>
-          <form class="dfc formFooter" action="">
+          <form class="dfc formFooter" action="mail.php" method="POST">
             <input type="text" placeholder="ваше имя"/>
             <input type="text" placeholder="номер телефона"/>
-            <button class="call" madal="call" type="submit">заказать сейчас</button>
+            <button class="call" type="submit">заказать сейчас</button>
           </form>
         </div>
       </div>

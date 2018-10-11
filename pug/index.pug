@@ -7,6 +7,21 @@ head
 	link(rel="stylesheet", href="../css/main.min.css")
 	script(src="../js/scripts.min.js")
 body
+	.modalBg
+		#call.modalSelf
+			.modalHeader
+				h4.modal-title Оставить заявку
+				button.close(modal="call")
+					span
+					span
+
+			.modalBody
+				form(method="post" action="mail.php")
+					input(type="text" placeholder="Ваше имя")
+					input(type="tel" placeholder="Ваш номер")
+					input(type="submit" value="Отправить")
+			.modalFooter
+	
 	header#header.header.dfc
 		.top-line
 			.container.df.aic.jsb
@@ -20,18 +35,18 @@ body
 					span.tel
 						span по вопросам:
 						a(href="tel: +77781647391")  +77781647391
-					button.call(madal="call") заказать звонок
+					button.call(modal="call") заказать звонок
 		.container.dfc
 			.header-wrp-text.dfc.jsb.center
 				h1.header-title Защита детей от выпадения с окна
 				small.subtitle решетки на окна в Астане
 				small.subtitle.bg привезем, установим - бесплатно!
 			.wrp-brn.dfc.aic
-				a(href="#").whatsappbtn
+				a(href="https://wa.me/77783083300").whatsappbtn
 					img(src="../img/svg/whatsapp.svg", alt="") 
 					span написать в whatsapp
-				a(href="#").subwhatsapp или показать номер
-		a(href="#").header-down-btn.centerX.df.bottom
+				a(href="tel:+77783083300").subwhatsapp или показать номер
+		a(href="#short-us").header-down-btn.centerX.df.bottom
 			img(src="../img/svg/he.svg", alt="").center
 
 	section#short-us
@@ -83,7 +98,7 @@ body
 					h3.section-title Опасность<br/>москитных сеток
 					p.paraq.
 						Основной задачей каждого родителя является забота о безопасности своего малыша. Как только ребенок встал на ноги и начал самостоятельно передвигаться по квартире, взрослые должны быть начеку.
-					button.call(madal="call") заказать сейчас
+					button.call(modal="call") заказать сейчас
 				.box
 					ul.list-priv
 						-
@@ -140,10 +155,10 @@ body
 						создан чтобы обезопасить<br/>
 						ваше чадо от случайного<br/>
 						выпадения из окна<br/>
-					form(action="").dfc.formFooter
+					form(action="mail.php" method="POST").dfc.formFooter
 						input(type="text" placeholder="ваше имя")
 						input(type="text" placeholder="номер телефона")
-						button.call(madal="call" type="submit") заказать сейчас
+						button.call(type="submit") заказать сейчас
 
 
 	footer#footer

@@ -5,6 +5,27 @@ $('.revslider').slick({
     prevArrow: '<button class="slick-prev"><img class="svg" src="../img/svg/greenarr.svg" alt="" /></button>',
 })
 
+$('[modal]').click(function(e){
+    e.preventDefault()
+    var t = $(this),
+        i = t.attr('id'),
+        b = $('.modalBg'),
+        h = t.hasClass('close');
+    if(h){
+        var id = t.attr('modal'),
+            obj = $('#'+id);
+            b.fadeOut();
+            obj.fadeOut();
+            $('body').css({'overflow':'auto'})
+    }else{
+        var id = t.attr('modal'),
+                    obj = $('#'+id);
+                    b.fadeIn().css({'display':'flex'});
+                    obj.fadeIn();
+                    $('body').css({'overflow':'hidden'})
+
+    }
+})
 
 jQuery('img.svg').each(function(){
     var $img = jQuery(this);
@@ -39,5 +60,21 @@ jQuery('img.svg').each(function(){
     }, 'xml');
 
 });
+
+
+
+ $("a[href*='#']").on("click", function(e){
+    var anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+    }, 777);
+    e.preventDefault();
+    return false;
+});
+
+
+
+
+
 });
 

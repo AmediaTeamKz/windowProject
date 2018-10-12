@@ -123,9 +123,20 @@ body
 
 				
 				.grid
-					-for(i=0;i!=6;i++){
+					-
+						var imgs=[
+									'http://straj-doors.ru/images/resh/resh-ot-detej.jpg',
+									'http://s09.radikal.ru/i182/1406/de/c243563bdba0.jpg',
+									'https://zonabalkona.ru/wp-content/uploads/2015/07/zashhita-ot-detej-na-plastikovye-okna2.jpg',
+									'',
+									'',
+									'',
+									'',
+									'',
+								];
+					-for(i=0;i!=3;i++){
 						.box-item
-							
+							img(src=imgs[i])
 					-};
 
 	section#rev
